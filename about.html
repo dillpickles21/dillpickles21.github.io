@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Players</title>
+    <link rel="stylesheet" href="main.css" id="csslink">
+	
+	<script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+  
+</head>
+
+<body>
+
+    <header>
+        <h1>Favorite Players</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Players</a></li>
+				<button onclick="toggleCSS()">Switch Style</button>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-about">
+            <h2>Favorite Players over the years</h2>
+            <p>This is a collection of my top 5 favorite players in no particular order that have played for the Brewers.</p>
+            <img src="images/prince.jpg" width="200" height="200">
+			<p>This is Prince Fielder, a First Baseman that played with the Brewers from 2005-2011.</p>
+			<a href="https://www.baseball-reference.com/players/f/fieldpr01.shtml" target="_blank">Click here for stats on Prince Fielder</a>
+			
+			<p></p>
+			
+			<img src="images/braun.jpg" width="200" height="200">
+			<p>This is Ryan Braun, an Outfielder that played with the Brewers from 2007-2020.</p>
+			<a href="https://www.baseball-reference.com/players/b/braunry02.shtml" target="_blank">Click here for stats on Ryan Braun</a>
+			
+			<p></p>
+			
+			<img src="images/yelich.jpg" width="200" height="200">
+			<p>This is Christian Yelich, an Outfielder that has played with the Brewers since 2018 and is currently on the team.</p>
+			<a href="https://www.baseball-reference.com/players/y/yelicch01.shtml" target="_blank">Click here for stats on Christian Yelich</a>
+			
+			<p></p>
+			
+			<img src="images/cain.jpg" width="200" height="200">
+			<p>This is Lorenzo Cain, an Outfielder that played with the Brewers in 2010 and from 2018-2022.</p>
+			<a href="https://www.baseball-reference.com/players/c/cainlo01.shtml" target="_blank">Click here for stats on Lorenzo Cain</a>
+			
+			<p></p>
+			
+			<img src="images/woodruff.jpg" width="200" height="200">
+			<p>This is Brandon Woodruff, a Pitcher that has played with the Brewers since 2017 and is currently on the team.</p>
+			<a href="https://www.baseball-reference.com/players/w/woodrbr01.shtml" target="_blank">Click here for stats on Brandon Woodruff</a>
+			
+			
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dylan's Baseball Page. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

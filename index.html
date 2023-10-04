@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Baseball Team and Players</title>
+    <link rel="stylesheet" href="main.css" id="csslink">
+	
+	<script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+  
+</head>
+
+<body>
+
+    <header>
+        <h1>Dylan's Baseball Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Players</a></li>
+				<button onclick="toggleCSS()">Switch Style</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Favorite Team - Milwaukee Brewers</h2>
+            <p>I was born in Wisconsin in 2002 and have been a fan of the Milwaukee Brewers ever since.</p>
+            <img src="images/Milwaukee_Brewers_logo.png" alt="Description of Image 1" width="200" height="200">
+			<p>In the players tab, you can see some of my favorite players from over the years.</p>
+        </section>
+
+        <table>
+            <caption>Brewers 2023 Statistics</caption>
+            <thead>
+                <tr>
+                    <th>Wins</th>
+                    <th>Loss</th>
+                    <th>Win %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>92</td>
+                    <td>70</td>
+                    <td>.568</td>
+                </tr>
+            </tbody>
+        </table>
+		
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dylan's Baseball Page. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

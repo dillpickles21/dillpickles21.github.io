@@ -1,0 +1,54 @@
+/* alternate.css */
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d9534f; /* Bootstrap's Danger Color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #5bc0de; /* Bootstrap's Info Color */
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+footer {
+    background-color: #5cb85c; /* Bootstrap's Success Color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
